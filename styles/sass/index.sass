@@ -1,5 +1,25 @@
-//? Styles
+@use "global"
+
+//[] Styles Global
+
+*
+	font-family: 'Josefin Sans', sans-serif
+	margin: 0
+	padding: 0
+	box-sizing: border-box
 
 body
-	font-family: 'Josefin Sans', sans-serif
+	background-color: global.$bg-color
+	color: global.$text-color
+
+	a
+		color: global.$text-color
+		text-decoration: none
+		transition: 0.4s
+
+	ul
+		list-style-type: none
+
+h2
+	color: global.$secondary-color
 

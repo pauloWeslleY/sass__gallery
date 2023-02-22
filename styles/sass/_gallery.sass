@@ -1,0 +1,66 @@
+@use "variables"
+@use "mixins"
+
+//[] Styles Gallery
+
+.gallery
+	@include mixins.container
+	@include mixins.flex-center
+	flex-wrap: wrap
+	justify-content: space-between
+	padding: 0
+
+	@include mixins.mobile
+		flex-direction: column
+
+	&__card
+		width: 31%
+		height: 400px
+		margin-bottom: 4%
+		@include mixins.flex-center
+		flex-direction: column
+		color: variables.$primary-color
+
+
+		@include mixins.mobile
+			width: 90%
+			margin-bottom: 6%
+
+		&_title
+			font-size: 2rem
+			font-weight: 500
+			margin-bottom: 1rem
+
+		&_btn
+			padding: .6rem .2rem
+			border: 2px solid variables.$primary-color
+			color: variables.$primary-color
+			font-weight: 400
+			text-transform: uppercase
+			// line-height: 1px
+
+			&:hover
+				background-color: variables.$primary-color
+				color: variables.$bg-color
+
+	#card_1
+		@include mixins.bg-image('animais.jpg')
+	#card_2
+		@include mixins.bg-image('arquitetura.jpg')
+	#card_3
+		@include mixins.bg-image('cidade.jpg')
+	#card_4
+		@include mixins.bg-image('decoracao.jpg')
+	#card_5
+		@include mixins.bg-image('esportes.jpg')
+	#card_6
+		@include mixins.bg-image('natureza.jpg')
+	#card_7
+		@include mixins.bg-image('paisagem.jpg')
+	#card_8
+		@include mixins.bg-image('pessoas.jpg')
+	#card_9
+		@include mixins.bg-image('refeicoes.jpg')
+
+
+

@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"start": "lite-server",
 		"sass": "sass --watch --style=compressed styles/sass/index.sass:styles/css/index.min.css"
 	},
 	"keywords": [],
